@@ -177,7 +177,7 @@ footer{margin-top:44px;padding-top:20px;border-top:1px solid var(--rule);font-si
     </div>
     <div class="brandtext">
       <h1>Radar bandi</h1>
-      <p class="sub">Mappa della finanza agevolata per il tour operator — Lazio, Italia, Europa. Aggiornata al <b>26 agosto 2026</b>.</p>
+      <p class="sub">Mappa della finanza agevolata per il tour operator — Lazio, Italia, Europa. Aggiornata al <b>21 settembre 2026</b>.</p>
     </div>
   </div>
   <button class="theme-btn" id="themeBtn" type="button">Tema</button>
@@ -240,11 +240,11 @@ footer{margin-top:44px;padding-top:20px;border-top:1px solid var(--rule);font-si
 
 <div class="legenda">
   <b>Come leggere il badge di verifica.</b> Ho riaperto una per una le pagine ufficiali degli enti il
-  <b>26 agosto 2026</b>. Ne risulta che:
+  <b>21 settembre 2026</b>. Ne risulta che:
   <ul>
     <li><b>✓ confermata alla fonte</b> — pagina dell'ente aperta e dati corrispondenti. Sono la maggioranza,
       e comprendono tutte quelle su cui c'è da muoversi adesso.</li>
-    <li><b>✓ non ancora uscita</b> — verificato che al 26 agosto <i>non</i> esiste un atto pubblicato.
+    <li><b>✓ non ancora uscita</b> — verificato che al 21 settembre <i>non</i> esiste un atto pubblicato.
       La data indicata è una previsione, ma la verifica dell'assenza è reale.</li>
     <li><b>◷ previsione</b> — data o parametro ricostruito dalla ricorrenza storica o da fonte qualificata
       non ufficiale. Serve a presidiare, non a pianificare.</li>
@@ -350,11 +350,23 @@ footer{margin-top:44px;padding-top:20px;border-top:1px solid var(--rule);font-si
 </div>
 
 <script>
-const OGGI = new Date(2026, 7, 26);
+const OGGI = new Date(2026, 8, 21);
 
 const M = [
 
 /* ============ APERTE E ATTIVABILI ORA ============ */
+
+{n:"Voucher Doppia Transizione 2026", e:"Camera di commercio di Roma", st:"aperto",
+ d:"2026-09-22", dlab:"chiusura domande", cat:["investimenti","persone"], forma:"Fondo perduto 70%", imp:"fino a 10.000 €, 11.500 € con premialità", donne:true,
+ t:"<b>L'edizione 2026 è uscita.</b> Pubblicata il 1&deg; settembre, precaricamento dall'8, invio domande <b>dalle 14:00 del 15 settembre alle 14:00 del 22 settembre</b>. Dotazione 10 M€, contributo al <b>70% delle spese ammissibili</b>, investimento minimo 3.000 €, massimale 10.000 € che sale a <b>11.500 € con le premialità</b> cumulabili: 250 € per il rating di legalità, <b>250 € per la certificazione di parità di genere</b>, 1.000 € per la compagine giovanile. Procedura valutativa a sportello in <b>ordine cronologico di presentazione</b>, ma non è un click-day: la finestra dura sette giorni. Ammessi beni strumentali digitali, consulenza e formazione sulle tecnologie indicate; esclusi smartphone, tablet, contratti di manutenzione, veicoli, beni destinati alla rivendita, servizi di marketing e fatture sotto i 500 €. <b>Un requisito nuovo e dirimente</b>: sono escluse le imprese che hanno già ricevuto un contributo camerale <b>nei tre anni precedenti</b> — è la prima cosa da verificare, prima ancora di riaprire il dossier. Domanda solo su Restart, con SPID o CNS del legale rappresentante.",
+ flag:"Chiude il 22 settembre alle 14:00", ver:"ok",
+ url:"https://www.rm.camcom.it/pagina4198_bando-voucher-doppia-transizione-2026.html"},
+
+{n:"SIMEST — Investimenti in IA e Quantum Computing", e:"SIMEST — nuova sezione Fondo 394/81", st:"aperto",
+ d:"2026-12-31", dlab:"fine potenziamento", cat:["investimenti","estero"], forma:"Finanziamento agevolato + fondo perduto 10%", imp:"riserva 200 M€",
+ t:"<b>Lo sportello è operativo dal 21 settembre</b>: la scheda SIMEST conferma l'attivazione della nuova Sezione, con riserva dedicata di <b>200 milioni</b>, <b>fondo perduto al 10%</b> dell'importo richiesto, durata estendibile fino a <b>8 anni</b> e prima tranche anticipata al <b>50%</b>. Copre hardware, licenze, infrastruttura dati, integrazione con i gestionali, compliance AI Act, cybersecurity e formazione del personale. Per un'azienda che costruisce itinerari su misura e lavora su lead digitali gli usi difendibili non mancano: scoring dei lead, personalizzazione dell'offerta, assistenza alla costruzione degli itinerari. <b>Quello che la scheda ufficiale non scrive è la soglia di fatturato estero</b>: l'abbassamento al 3% contro il 10% ordinario circola su fonti qualificate ma non compare sulla pagina SIMEST. Va letto nella circolare aggiornata prima di impostare qualsiasi domanda — ed è esattamente il punto su cui il calcolo del rigo VE32 decide se si entra o no.",
+ flag:"Soglia di fatturato estero non confermata sulla scheda ufficiale: va letta nella circolare", ver:"ok",
+ url:"https://www.simest.it/per-le-imprese/finanziamenti-agevolati/finanziamenti-agevolati-internazionalizzazione/transizione-digitale-o-ecologica/"},
 
 {n:"Voucher Cloud Computing e Cybersecurity", e:"MIMIT — attuazione Infratel", st:"aperto",
  d:"2026-10-20", dlab:"precompilazione", cat:["investimenti"], forma:"Fondo perduto 50%", imp:"4.000 – 20.000 €",
@@ -460,12 +472,6 @@ const M = [
 
 /* ============ ATTESE — DA PRESIDIARE ============ */
 
-{n:"SIMEST — Investimenti in IA e Quantum Computing", e:"SIMEST — nuova sezione Fondo 394/81", st:"atteso",
- d:"2026-09-21", dlab:"apertura sportello", cat:["investimenti","estero"], forma:"Finanziamento agevolato + fondo perduto 10%", imp:"dotazione 200 M€",
- t:"La finestra più favorevole del calendario. Dotazione <b>200 milioni</b>, durata fino a 8 anni con 2 di preammortamento e prima tranche del 50% erogata in anticipo. Il punto che la rende speciale: il <b>requisito di fatturato estero scenderebbe al 3%</b> contro il 10% ordinario — con il carve-out VE32 sul turismo, Onivà lo supererebbe quasi certamente. Copre hardware, licenze, infrastruttura dati, integrazione con i gestionali, compliance AI Act, cybersecurity e <b>formazione del personale</b>. Per un'azienda che costruisce itinerari su misura e lavora su lead digitali, gli usi difendibili non mancano: scoring dei lead, personalizzazione dell'offerta, assistenza alla costruzione degli itinerari. <b>Data e soglia del 3% vengono da fonte qualificata non ufficiale</b>: le condizioni definitive escono con l'aggiornamento della circolare, da rileggere il 21 settembre prima di muoversi.",
- flag:"Apertura attesa il 21 settembre — tra meno di un mese", ver:"prev",
- url:"https://www.simest.it/media/mondo-simest/simest-lancia-una-nuova-misura-da-200-milioni-di-euro-dedicata-agli-investimenti-in-intelligenza-artificiale-per-le-pmi-italiane/"},
-
 {n:"Nuovo Fondo Piccolo Credito", e:"Regione Lazio / Lazio Innova — Fare Lazio", st:"atteso",
  d:"", cat:["liquidità"], forma:"Finanziamento a tasso zero", imp:"10.000 – 50.000 €",
  t:"<b>Tasso zero</b>, 60 mesi con 12 di preammortamento, copertura fino al 100% del costo del progetto, e — cosa rara — tra le spese ammissibili c'è il <b>capitale circolante</b> accanto a investimenti e consulenze. ATECO 79.12 ammesso. Requisiti: due bilanci depositati, esposizione bancaria contenuta, regolarità contributiva, polizza catastrofale. L'edizione 2026 ha aperto l'11 maggio alle 10:00 e ha <b>chiuso il 18 maggio</b>: 51,7 M€ bruciati in sette giorni. La misura è stata riaperta nel 2023, 2024 e 2026, quindi una nuova edizione è ragionevole ma non annunciata. La pre-registrazione su farelazio.it apre 4 giorni prima dello sportello: <b>chi si accorge dell'apertura dalla stampa arriva tardi</b>.",
@@ -478,23 +484,17 @@ const M = [
  flag:"", ver:"prev",
  url:"https://www.lazioinnova.it/bandi/fondo-patrimonializzazione-pmi-2026/"},
 
-{n:"Voucher Digitalizzazione PMI — III edizione", e:"Regione Lazio / Lazio Innova — PR FESR", st:"atteso",
- d:"", cat:["investimenti"], forma:"Fondo perduto a costi standard", imp:"8.125 – 100.000 €", donne:true,
- t:"Il bando più capiente sul fronte digitale, e l'unico dove <b>la certificazione di parità di genere si monetizza direttamente: +10 punti su 100 in graduatoria</b>. ATECO 79.12 verificato ammissibile sull'Appendice 1 dell'avviso (le esclusioni sono solo de minimis e DNSH). Copre diagnosi digitale, digital workplace, <b>sistemi di e-commerce</b>, migrazione cloud, cybersecurity — e Onivà, essendo piccola impresa e non micro, accede a tutte le voci. Soglia minima di progetto 14.000 €. Non è click-day ma graduatoria a punteggio: gli altri criteri sono valore aggiunto per addetto, numero di addetti, complessità progettuale, certificazioni ambientali. II edizione chiusa a novembre 2025, prima graduatoria approvata a maggio 2026, terza edizione non ancora pubblicata.",
- flag:"", ver:"ok",
- url:"https://www.lazioinnova.it/bandi/voucher-digitalizzazione-pmi-ii-edizione-2025/"},
+{n:"Voucher Digitalizzazione PMI 2026 — III edizione", e:"Regione Lazio / Lazio Innova — PR FESR", st:"atteso",
+ d:"2026-09-29", dlab:"apertura domande", cat:["investimenti"], forma:"Fondo perduto a costi standard", imp:"14.000 – 150.000 €", donne:true,
+ t:"<b>Pubblicata.</b> Presentata l'11 settembre, <b>domande dal 29 settembre</b> su GeCoWEB Plus, dotazione <b>15 M€</b>. Rispetto alla II edizione i massimali salgono parecchio: <b>50.000 € per le micro, 100.000 € per le piccole, 150.000 € per le medie</b>, con soglia minima di progetto a <b>14.000 €</b>. Cinque interventi a costi standard — diagnosi digitale (8.162 – 21.427 €), digital workplace (2.270 € per licenza), <b>sistemi di digital commerce & engagement</b> (4.955 – 15.874 €), migrazione cloud (14.076 – 27.656 € per tipo di server), cybersecurity (14.657 – 44.917 €). Per le piccole e le medie <b>la diagnosi digitale è obbligatoria</b>, ma un progetto di sola diagnosi non è ammissibile. <b>Non è click-day</b>: graduatoria costruita su criteri di qualità e articolazione degli interventi. Onivà, essendo piccola impresa e non micro, accede a tutte le voci. <b>Da verificare sull'avviso</b> se in questa edizione la certificazione di parità di genere conserva i 10 punti su 100 che valeva nella precedente: i criteri di punteggio non sono esposti sulle pagine pubblicate finora.",
+ flag:"Apre il 29 settembre: il progetto va impostato prima, non dopo", ver:"ok",
+ url:"https://www.lazioinnova.it/bandi/voucher-digitalizzazione-pmi-2026/"},
 
 {n:"Donne e Impresa", e:"Regione Lazio / Lazio Innova", st:"atteso",
  d:"", cat:["investimenti","comunicazione"], forma:"Fondo perduto 50–70%", imp:"fino a 100.000 €", donne:true,
  t:"<b>50–70% a fondo perduto fino a 100.000 €</b> su macchinari, attrezzature, software e piattaforme digitali incluso il SaaS, con spese generali forfettarie al 20% e un bonus aggiuntivo di circa 4.950 € per soluzioni di <i>digital commerce & engagement</i>. Turismo ammesso. Il punteggio premia anzianità d'impresa (30 punti) e fatturato (30): su entrambi Onivà si presenta bene. <b>Il requisito che decide è l'assetto</b>: per le società di capitali servono <b>almeno 2/3 delle quote in mano a donne <i>e</i> almeno 2/3 degli amministratori donne</b>, da mantenere per 3 anni dopo l'erogazione. È il bando che il salto oltre i due terzi sbloccherebbe — ma solo se si muove anche l'organo amministrativo. Edizione 2026 chiusa il 10 giugno; la misura è ricorrente, prossima edizione ragionevolmente attesa nella primavera 2027.",
  flag:"", ver:"ok",
  url:"https://www.lazioinnova.it/bandi/donne-e-impresa-2026/"},
-
-{n:"Voucher Doppia Transizione Digitale ed Ecologica", e:"Camera di commercio di Roma", st:"incerto",
- d:"", cat:["investimenti","persone"], forma:"Fondo perduto 70%", imp:"fino a 10.000 €",
- t:"Piccolo ma facile, e copre una combinazione insolita: <b>beni e servizi digitali + consulenza + formazione, al 70%</b>, con investimento minimo 3.000 €. Nell'edizione 2025 la Camera di Roma aveva 10 M€ e la finestra è durata <b>dieci giorni</b> (15–25 settembre), in ordine cronologico. <b>Stato al 26 agosto</b>: sulla pagina bandi della Camera di Roma <b>l'edizione 2026 non è pubblicata</b> — c'è solo la 2025 in fase di liquidazione. Altre camere hanno già aperto con scadenze tra fine agosto e metà ottobre (Caltanissetta 31/8, Aosta e Gran Sasso 30/9, Bari 15/10), quindi la finestra romana, se arriva, arriva adesso. Sull'elenco nazionale PID la posizione di Roma risulta ambigua e non l'ho potuta risolvere con certezza: <b>vale una telefonata al PID di Roma</b>, che costa dieci minuti e toglie il dubbio. <b>Il dossier è già pronto</b> — relazione descrittiva e presentazione sono nella cartella Onivà dallo scorso aprile: quello che manca è la finestra. Da presidiare settimanalmente da inizio settembre, tenendo pronti SPID del legale rappresentante e accesso a restart.infocamere.it. Se Roma non pubblica, gran parte di quel dossier si ricicla quasi tale e quale sul <b>Voucher Cloud e Cybersecurity</b> del MIMIT, che apre il 20 ottobre e ha un massimale doppio.",
- flag:"Edizione 2026 non ancora pubblicata da Roma: se apre, apre in queste settimane", ver:"nonuscita",
- url:"https://www.rm.camcom.it/pagina4098_bando-voucher-doppia-transizione-digitale-e-ecologica-2025.html"},
 
 {n:"Impresa Rosa", e:"Regione Lazio / Lazio Innova", st:"atteso",
  d:"", cat:["persone"], forma:"Fondo perduto", imp:"3.000 € nella fascia 10–15 dipendenti", donne:true,
@@ -515,9 +515,9 @@ const M = [
  url:"https://www.ministeroturismo.gov.it/legge-di-bilancio-ministero-del-turismo-le-misure-presenti-in-manovra-2026/"},
 
 {n:"Marchi+", e:"MIMIT / UIBM", st:"atteso",
- d:"", cat:["comunicazione"], forma:"Fondo perduto 80% / 85%", imp:"6.000 € per marchio UE, 9.000 € internazionale", donne:true,
- t:"Misura A per il marchio UE via EUIPO: <b>80%</b>, max 6.000 € per marchio. Misura B per il marchio internazionale via WIPO: <b>90%</b>, max 9.000 €. Con la <b>certificazione UNI/PdR 125:2022 le aliquote salgono a 85% e 95%</b>. PMI di tutti i settori, tutto il territorio nazionale. L'ultimo sportello ha aperto il <b>4 dicembre 2025 e si è chiuso il giorno dopo</b> per esaurimento dei 2 M€: la pratica deve essere pronta e caricata prima dell'apertura, non dopo. Edizione 2026 non annunciata. Rilevante solo se c'è un tema di tutela del marchio Onivà — ma se c'è, questa è la via.",
- flag:"Lo sportello 2025 è durato un giorno", ver:"nonuscita",
+ d:"2026-09-28", dlab:"pubblicazione attesa", cat:["comunicazione"], forma:"Fondo perduto 80% / 85%", imp:"6.000 € per marchio UE, 9.000 € internazionale", donne:true,
+ t:"Misura A per il marchio UE via EUIPO: <b>80%</b>, max 6.000 € per marchio. Misura B per il marchio internazionale via WIPO: <b>90%</b>, max 9.000 €. Con la <b>certificazione UNI/PdR 125:2022 le aliquote salgono a 85% e 95%</b>. PMI di tutti i settori, tutto il territorio nazionale. L'ultimo sportello ha aperto il <b>4 dicembre 2025 e si è chiuso il giorno dopo</b> per esaurimento dei 2 M€: la pratica deve essere pronta e caricata prima dell'apertura, non dopo. <b>Novità</b>: il riparto MIMIT 2026 assegna <b>32 M€ complessivi</b> ai tre bandi Brevetti+, Disegni+ e Marchi+, di cui <b>2 M€ a Marchi+</b>, e fissa la <b>pubblicazione degli avvisi entro il 28 settembre 2026</b>, con apertura degli sportelli nelle settimane successive. Rilevante solo se c'è un tema di tutela del marchio Onivà — ma se c'è, la pratica va preparata adesso, perché lo sportello si apre e si chiude prima che si faccia in tempo a costruirla.",
+ flag:"Avvisi attesi entro il 28 settembre; nel 2025 lo sportello è durato un giorno", ver:"sec",
  url:"https://www.mimit.gov.it/it/incentivi/marchi-2025"},
 
 {n:"Voucher Internazionalizzazione PMI", e:"Regione Lazio / Lazio Innova — PR FESR", st:"atteso",
@@ -561,13 +561,13 @@ const M = [
 ];
 
 const CAL = [
- ["Settembre","<b>SIMEST IA & Quantum</b> apre lo sportello il 21 (200 M€, soglia export al 3%). <b>Acchiappa Talenti</b> scade il 30. Storicamente è il mese del <b>Voucher Doppia Transizione</b> camerale, e altre camere hanno già aperto: se Roma pubblica, è ora."],
- ["Ottobre","<b>Voucher Cloud e Cybersecurity</b>: precompilazione dal 20. Prima di allora vanno verificati i fornitori nell'elenco abilitato MIMIT."],
+ ["Settembre","<b>Voucher Doppia Transizione</b> camerale: domande fino alle 14:00 del 22. <b>SIMEST IA & Quantum</b>: sportello operativo dal 21. Pubblicazione attesa dei bandi <b>Brevetti+, Disegni+ e Marchi+</b> entro il 28. <b>Voucher Digitalizzazione PMI</b> del Lazio: domande dal 29. <b>Acchiappa Talenti</b> scade il 30 alle 17:00."],
+ ["Ottobre","<b>Voucher Cloud e Cybersecurity</b>: precompilazione dal 20. Prima di allora vanno verificati i fornitori nell'elenco abilitato MIMIT. Finestra del <b>Voucher Digitalizzazione PMI</b> del Lazio in corso."],
  ["Novembre","<b>Voucher Cloud e Cybersecurity</b>: invio domande dal 10, ordine cronologico. Finestra storica dei voucher regionali di internazionalizzazione."],
  ["Dicembre","Chiusura di <b>SALGO</b> (4), <b>Rafforzamento capacità manageriali</b> (22), <b>Bando Sviluppo Impresa</b> camerale (31). Ultimo giorno utile per il <b>Bonus Donne</b> e per il potenziamento SIMEST (31). Storicamente esce <b>Marchi+</b>, con sportelli che durano un giorno."],
  ["Gennaio – aprile","Finestra INPS per l'<b>esonero 1% parità di genere</b>, per chi si è certificato entro il 31 dicembre. Possibile pubblicazione del decreto attuativo dei <b>contratti di filiera turismo</b>."],
  ["Aprile – giugno","La stagione dei fondi Lazio Innova: nel 2026 sono usciti e si sono esauriti <b>Piccolo Credito</b> (11–18 maggio), <b>Patrimonializzazione</b> (chiuso il 15 maggio) e <b>Donne e Impresa</b> (22 aprile – 10 giugno). È il trimestre in cui il dossier deve essere già pronto."],
- ["Nel corso del 2027","Open call a cascata dei progetti <b>SMP-COSME turismo</b> (7–15 k€ per PMI). Possibile <b>III edizione del Voucher Digitalizzazione PMI</b> del Lazio, dove la certificazione di parità vale 10 punti."]
+ ["Nel corso del 2027","Open call a cascata dei progetti <b>SMP-COSME turismo</b> (7–15 k€ per PMI). Finestra INPS per l'esonero 1% parità di genere. Possibile riedizione di <b>Donne e Impresa</b> e dei fondi <b>Piccolo Credito</b> e <b>Patrimonializzazione</b> di Lazio Innova."]
 ];
 
 const DEAD = [
@@ -610,7 +610,10 @@ const DEAD = [
  ["Fondir e Fondoprofessioni","Fondi interprofessionali","il primo finanzia solo la formazione dei dirigenti (Onivà non ne ha in organico), il secondo è riservato agli studi professionali"],
  ["Formatemp","Formatemp","fondo per la formazione dei lavoratori in somministrazione: non pertinente a dipendenti diretti"],
  ["Fondo Nuove Competenze 3","Ministero del Lavoro","sportello chiuso dall'aprile 2025; il rifinanziamento di gennaio 2026 serve solo allo scorrimento delle istanze già presentate"],
- ["Sostituzione veicoli commerciali inquinanti","Regione Lazio","formalmente ammissibile, senza rilevanza per il modello operativo"]
+ ["Sostituzione veicoli commerciali inquinanti","Regione Lazio","formalmente ammissibile, senza rilevanza per il modello operativo"],
+ ["Sviluppo Competenze — secondo sportello","MIMIT / Invitalia","formazione finanziata al 50–70% su progetti da 10.000 a 60.000 €, sportello dal 10 settembre al 21 dicembre 2026, e il turismo è espressamente tra gli ambiti ammessi. Ma le beneficiarie sono solo le PMI di Basilicata, Calabria, Campania, Molise, Puglia, Sardegna e Sicilia: il Lazio è fuori"],
+ ["Accordi per l'innovazione e quantum computing — 140 M€ del 18 settembre 2026","MIMIT","rifinanziamento destinato a progetti di ricerca e sviluppo industriale del sistema manifatturiero. Malgrado il titolo sul digitale, non c'è oggetto agevolabile per un tour operator"],
+ ["Contributi ad agenzie di viaggio e tour operator — Fondo unico nazionale turismo","Ministero del Turismo","misura del 2023 da 39 M€, con ATECO 79.11 e 79.12 tra i destinatari diretti: chiusa, e comunque subordinata a un calo di fatturato 2021 su 2019 di almeno il 30%. Vale la pena ricordarla perché è l'unica volta in cui un contributo nazionale ha avuto i TO come platea propria"]
 ];
 
 /* ---------- rendering ---------- */
